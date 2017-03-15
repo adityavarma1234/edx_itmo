@@ -7,19 +7,24 @@ int main()
   freopen("input.txt", "r", stdin);
   freopen("output.txt", "w", stdout);
   int n;
-  cin >> n;
+  //cin >> n;
+  scanf("%d\n",&n);
   while(n--)
   {
     char a; int b;
-    cin >> a;
+    //cin >> a;
+    scanf("%c",&a);
     if(a == '-')
     {
-      cout << s.front() << endl;
+      //cout << s.front() << endl;
+      printf("%d\n",s.front());
+      scanf("%c",&a);
       s.pop();
     }
     else
     {
-      cin >> b;
+      //cin >> b;
+      scanf("%d\n",&b);
       s.push(b);
     }
   }
